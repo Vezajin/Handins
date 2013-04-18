@@ -1,0 +1,82 @@
+* Assignment: Gorilla
+** Student info:
+   - Group name:
+   - Name1: Mark E. Klitgaard
+   - Email1: mekl@itu.dk
+   - Name2:
+   - Email2:
+   - Compiler: Whatever the newest release of Eclipse Juno uses.
+   - Text editor / IDE: Eclipse
+
+** Assignment info:
+   Mark one of the following boxes with an X
+
+   [X] Yes, to the best of our knowledge, everything works as it
+   should. In particular, here is the test client for vector
+   operations (length, angle) that our code has passed:
+
+
+   	public static void computeAngle() {
+		int[] a = {2,1};
+		int[] b =  {8,4};
+		int[] c = {5,9};
+		int[] d = {13,2};
+		double d1 = dotProduct(a, b)/(length(a)*length(b));
+		double d2 = dotProduct(c, b)/(length(c)*length(b));
+		double d3 = dotProduct(c, d)/(length(c)*length(d));
+		StdOut.println(d1); //Tested with calcualtor, results match
+		StdOut.println(d2); //Tested with calcualtor, results match
+		StdOut.println(d3); //Tested with calcualtor, results match
+	}
+
+
+
+   [ ] No, our solution does not work. (We will not get credit for this.)
+   In particular, 
+
+   ... (explain what doesn't work)
+
+   - Total hours to complete the assignment (optional): ...
+
+
+   RESULTS
+
+   The two most alike species are: 
+   The two most alike are: Human and Gorilla: 0.8437499999999998
+
+   The two most different species are: 
+   The two least alike are: Human and Lamprey: 0.0
+
+   All species in order of similarity with humans:
+
+   	Humans and Gorilla similiarty: 0.8437499999999998
+	Humans and Spider Monkey similiarty: 0.4513652846144005
+	Humans and Horse similiarty: 0.05490238294958887
+	Humans and Deer similiarty: 0.007812499999999998
+	Humans and Pig similiarty: 0.15686395128453964
+	Humans and Cow similiarty: 0.09374999999999999
+	Humans and Gull similiarty: 0.015445051580380386
+	Humans and Trout similiarty: 0.015328483487124143
+	Humans and Rockcod similiarty: 0.007782160079558629
+	Humans and Lamprey similiarty: 0.0
+	Humans and Sea-Cucumber similiarty: 0.014887283354385342
+
+
+
+** Help
+   List whatever help (if any) that you received, including help from
+   TAs or fellow students. (Such help is allowed, but we want you to
+   acknowledge it.)
+
+   ...
+
+** Comments
+   List any other comments here. Feel free to provide any feedback on
+   how much you learned from doing the assignment, and whether you
+   enjoyed doing it. In particular, tell us how this exercise could be
+   improved.
+ 
+   The dot product and length of vectors have been tested, and confirmed working. Though,
+	it does seem a bit weird that humans are THAT far alike from some animals, such as deers. The values k = 20 and d = 10.000 were used.
+	I tried using different values, but not really find any that made more sense than those, but I can see that K affects the results, which makes sense.
+	For instance, with k = 8 lamprey is more similiar to humans than trout, which is the other way around at k = 20.
